@@ -1,0 +1,22 @@
+{
+  "name": "Poi Debug Endpoint",
+  "description": "This extension issues a JSON request to external Endpoint by copying the JSON from link.",
+  "version": "0.1.1",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "icons": { "128": "maps_128x128.png" },
+  "options_page": "options.html",
+  "permissions": [
+    "tabs", 
+    "activeTab",
+    "http://*/*", 
+    "https://*/*"
+  ],
+  "browser_action": {
+    "default_title": "Open new tab",
+    "default_icon": "maps_16x16.png"
+  },
+  "manifest_version": 2
+}
